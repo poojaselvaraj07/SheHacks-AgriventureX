@@ -47,12 +47,15 @@ class PulsesLand extends StatelessWidget {
                                   fontSize: 18,
                                   color: Colors.black
                               ),
-                              text: 'The land selected should be free from volunteer plants. The soil should be fertile with neutral pH and proper drainage facility. It should be prepared to fine tilth. Ridges are formed with a gap of 60 – 90 cm. '),
+                              text: '• The land selected should be free from volunteer plants. The soil should be fertile with neutral pH and proper drainage facility. It should be prepared to fine tilth. Ridges are formed with a gap of 60 – 90 cm. '),
                         ],
                       ),
                     ),
                   )
               ),
+              SizedBox(height: 10.0),
+              Image.asset('assets/pulsesland.jpg',width: 300),
+              SizedBox(height:30.0),
             ],
           ),
         ),

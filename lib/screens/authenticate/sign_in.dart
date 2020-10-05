@@ -34,7 +34,11 @@ class _SignInState extends State<SignIn> {
         centerTitle: true,
         backgroundColor: Color(0xff32e0c4),
         elevation: 0.0,
-        title: Text('SIGN IN'),
+        title: Text('SIGN IN',
+          style: TextStyle(
+            fontSize: 30.0,
+            fontFamily: 'Oswald',
+          ),),
       ),
       body: SingleChildScrollView(
         child: Container(
@@ -74,7 +78,11 @@ class _SignInState extends State<SignIn> {
                       padding: EdgeInsets.fromLTRB(50.0, 20.0, 50.0, 20.0),
                     child: Text(
                       'SIGN IN',
-                      style: TextStyle(color: Color(0xffeeeeee)),
+                      style: TextStyle(
+                          fontFamily: 'Droid',
+                          fontSize: 18,
+                          color: Colors.white
+                      ),
                     ),
                     onPressed: () async {
                       if (_formkey.currentState.validate()) {
@@ -103,7 +111,10 @@ class _SignInState extends State<SignIn> {
                     padding: EdgeInsets.fromLTRB(50.0, 20.0, 50.0, 20.0),
                     child: Text(
                       'REGISTER',
-                      style: TextStyle(color: Color(0xffeeeeee)),
+                      style: TextStyle(
+                          fontFamily: 'Droid',
+                          fontSize: 18,
+                          color: Color(0xffeeeeee)),
                     ),
                     onPressed: () {
                       widget.toggleView();

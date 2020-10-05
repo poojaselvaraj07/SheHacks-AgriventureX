@@ -120,9 +120,9 @@ class _SeedState extends State<Seed> {
                     ),
                   )
               ),
-              SizedBox(height: 8.0),
-              Image.asset('assets/riceseed.jpg',width: 300,),
-              SizedBox(height:4.0),
+              SizedBox(height: 10.0),
+              Image.asset('assets/riceseed.jpg',width: 300),
+              SizedBox(height:10.0),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text('A good sample of rice seed should be:',
@@ -228,6 +228,7 @@ class _SeedState extends State<Seed> {
                   ),
                 ),
               ),
+              SizedBox(height: 50),
             ],
           ),
         ),

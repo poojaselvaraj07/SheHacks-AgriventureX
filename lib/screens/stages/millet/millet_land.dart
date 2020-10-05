@@ -53,6 +53,9 @@ class MilletLand extends StatelessWidget {
                     ),
                   )
               ),
+              SizedBox(height: 10.0),
+              Image.asset('assets/milletland.jpg',width: 300),
+              SizedBox(height:10.0),
               
             ],
           ),

@@ -87,7 +87,9 @@ class PulsesWater extends StatelessWidget {
                     ),
                   )
               ),
-
+              SizedBox(height: 10.0),
+              Image.asset('assets/pulseswater.gif',width: 300),
+              SizedBox(height:30.0),
 
             ],
           ),

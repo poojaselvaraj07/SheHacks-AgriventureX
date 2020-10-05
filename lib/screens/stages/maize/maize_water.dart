@@ -91,6 +91,9 @@ class MaizeWater extends StatelessWidget {
                     ),
                   )
               ),
+              SizedBox(height: 10.0),
+              Image.asset('assets/maizewater.jpg',width: 300),
+              SizedBox(height:10.0),
               Container(
                   child:Padding(
                     padding: const EdgeInsets.fromLTRB(18.0, 10.0, 18.0, 0.0),
@@ -167,6 +170,9 @@ class MaizeWater extends StatelessWidget {
                     ),
                   )
               ),
+              SizedBox(height: 10.0),
+              Image.asset('assets/maizenutrient.jpg',width: 300),
+              SizedBox(height:10.0),
               Container(
                   child:Padding(
                     padding: const EdgeInsets.fromLTRB(18.0, 10.0, 18.0, 0.0),

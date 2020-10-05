@@ -105,6 +105,9 @@ class MilletHarvest extends StatelessWidget {
                     ),
                   )
               ),
+              SizedBox(height: 10.0),
+              Image.asset('assets/milletharvest.jpg',width: 300),
+              SizedBox(height:30.0),
             ],
           ),
         ),

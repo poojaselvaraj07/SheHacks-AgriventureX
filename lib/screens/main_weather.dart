@@ -20,6 +20,7 @@ class WeatherML extends StatelessWidget {
 
       ],
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: ThemeData(
           primarySwatch: Colors.blue,
@@ -49,6 +50,7 @@ class _DetectionPageState extends State<DetectionPage> {
     final f = Provider.of<ServiceProvider>(context);
     return Scaffold(
       appBar: AppBar(
+
         centerTitle: true,
         backgroundColor: Color(0xff32e0c4),
         title: Text(widget.title,

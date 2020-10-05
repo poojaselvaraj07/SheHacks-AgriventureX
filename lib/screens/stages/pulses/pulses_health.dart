@@ -69,7 +69,27 @@ class PulsesHealth extends StatelessWidget {
                     ),
                   )
               ),
-
+              Container(
+                  child:Padding(
+                    padding: const EdgeInsets.fromLTRB(18.0, 10.0, 18.0, 0.0),
+                    child: RichText(
+                      text: TextSpan(
+                        children: <TextSpan>[
+                          TextSpan(
+                              style: TextStyle(
+                                  fontFamily: 'Droid',
+                                  fontSize: 18,
+                                  color: Colors.black
+                              ),
+                              text: '• Use entomopathogenic fungus Fusarium pallidoroseum or Beauveria bassiana to cause epizootics in aphids in the cowpea field. Spraying of infested crop with 500 methyl demeton 25 EC or dimethoate or 125 ml imidaclorpid in 500 L water per ha effectively control aphids.'),
+                        ],
+                      ),
+                    ),
+                  )
+              ),
+              SizedBox(height: 10.0),
+              Image.asset('assets/pulseshealth.png',width: 300),
+              SizedBox(height:30.0),
 
 
             ],

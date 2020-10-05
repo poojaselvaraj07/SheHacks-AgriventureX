@@ -55,6 +55,9 @@ class MilletCrop extends StatelessWidget {
                   ),
                 ),
               ),
+              SizedBox(height: 10.0),
+              Image.asset('assets/milletcrop.jpg',width: 300),
+              SizedBox(height:10.0),
               Padding(
                 padding: const EdgeInsets.fromLTRB(18.0, 10.0, 18.0, 10.0),
                 child: RichText(

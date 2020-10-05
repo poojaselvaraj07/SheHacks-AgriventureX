@@ -123,24 +123,9 @@ class PulsesSeed extends StatelessWidget {
                     ),
                   )
               ),
-              Container(
-                  child:Padding(
-                    padding: const EdgeInsets.fromLTRB(18.0, 10.0, 18.0, 40.0),
-                    child: RichText(
-                      text: TextSpan(
-                        children: <TextSpan>[
-                          TextSpan(
-                              style: TextStyle(
-                                  fontFamily: 'Droid',
-                                  fontSize: 18,
-                                  color: Colors.black
-                              ),
-                              text: ''),
-                        ],
-                      ),
-                    ),
-                  )
-              ),
+              SizedBox(height: 10.0),
+              Image.asset('assets/pulsesseed.jpg',width: 300),
+              SizedBox(height:30.0),
             ],
           ),
         ),

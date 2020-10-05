@@ -53,6 +53,9 @@ class MaizeHarvest extends StatelessWidget {
                     ),
                   )
               ),
+              SizedBox(height: 10.0),
+              Image.asset('assets/maizeharvest.jpg',width: 300),
+              SizedBox(height:10.0),
               Padding(
                 padding: const EdgeInsets.all(18.0),
                 child: RichText(

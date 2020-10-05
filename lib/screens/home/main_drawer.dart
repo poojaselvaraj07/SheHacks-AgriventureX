@@ -1,4 +1,7 @@
+import 'package:agriventurex_app/screens/home/aboutus.dart';
+import 'package:agriventurex_app/screens/home/location.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class MainDrawer extends StatelessWidget {
   @override
@@ -20,7 +23,7 @@ class MainDrawer extends StatelessWidget {
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           image: DecorationImage(
-                              image: AssetImage('assets/dummy_user.svg'),
+                              image: AssetImage('assets/user_final.png'),
                               fit: BoxFit.fill),
                         ),
                       ),
@@ -49,7 +52,12 @@ class MainDrawer extends StatelessWidget {
                         fontSize: 22,
                         fontFamily: 'Oswald'
                       )
-                  )
+                  ),
+                  onTap: () {
+                    Navigator.push(context, MaterialPageRoute(
+                        builder: (context) => AboutUs()
+                    ));
+                  }
               ),
               ListTile(
                   leading: Icon(Icons.person),
@@ -60,17 +68,9 @@ class MainDrawer extends StatelessWidget {
                           fontFamily: 'Oswald'
                       )
                   )
-              ),
-              ListTile(
-                  leading: Icon(Icons.language),
-                  title: Text(
-                      'हिंदी',
-                      style: TextStyle(
-                        fontSize: 22,
 
-                      )
-                  )
               ),
+
               ListTile(
                   leading: Icon(Icons.location_on),
                   title: Text(
@@ -79,7 +79,12 @@ class MainDrawer extends StatelessWidget {
                         fontSize: 22,
                           fontFamily: 'Oswald'
                       )
-                  )
+                  ),
+                  onTap: () {
+                    Navigator.push(context, MaterialPageRoute(
+                    builder: (context) => Location()
+                    ));
+                  }
               ),
               ListTile(
                   leading: Icon(Icons.settings),

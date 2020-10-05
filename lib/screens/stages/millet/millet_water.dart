@@ -105,6 +105,9 @@ class MilletWater extends StatelessWidget {
                     ),
                   )
               ),
+              SizedBox(height: 10.0),
+              Image.asset('assets/milletwater.jpg',width: 300),
+              SizedBox(height:30.0),
             ],
           ),
         ),

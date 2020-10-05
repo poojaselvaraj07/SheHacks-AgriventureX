@@ -35,7 +35,11 @@ class _RegisterState extends State<Register> {
         centerTitle: true,
         backgroundColor: Color(0xff32e0c4),
         elevation: 0.0,
-        title: Text('SIGN UP'),
+        title: Text('SIGN UP',
+          style: TextStyle(
+            fontSize: 30.0,
+            fontFamily: 'Oswald',
+          ),),
       ),
       body: SingleChildScrollView(
         child: Container(
@@ -75,7 +79,10 @@ class _RegisterState extends State<Register> {
                     padding: EdgeInsets.fromLTRB(50.0, 20.0, 50.0, 20.0),
                     child: Text(
                       'REGISTER',
-                      style: TextStyle(color: Color(0xffeeeeee)),
+                      style: TextStyle(fontFamily: 'Droid',
+                          fontSize: 18,
+                          color: Colors.white
+                      ),
                     ),
                     onPressed: () async {
                       if (_formkey.currentState.validate()) {
@@ -93,8 +100,7 @@ class _RegisterState extends State<Register> {
                   SizedBox(height: 20.0),
                   Text("Already have an account?",style: TextStyle(
                       fontFamily: 'Droid',
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
+                      fontSize: 18,
                       color: Colors.black
                   ),),
                   SizedBox(height: 20.0),
@@ -103,7 +109,10 @@ class _RegisterState extends State<Register> {
                     padding: EdgeInsets.fromLTRB(50.0, 20.0, 50.0, 20.0),
                     child: Text(
                       'SIGN IN',
-                      style: TextStyle(color: Color(0xffeeeeee)),
+                      style: TextStyle(fontFamily: 'Droid',
+                          fontSize: 18,
+                          color: Colors.white
+                      ),
                     ),
                     onPressed: () {
                       widget.toggleView();

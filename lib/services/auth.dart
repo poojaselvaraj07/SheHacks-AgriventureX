@@ -1,12 +1,17 @@
+import 'dart:math';
+import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
 import 'package:provider/provider.dart';
 import 'package:agriventurex_app/models/user.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'dart:io';
+import 'package:uuid/uuid.dart';
 
 class AuthService with ChangeNotifier {
-
+  String url;
+  String answer;
   final FirebaseAuth _auth = FirebaseAuth.instance;
 
   //user object
@@ -67,20 +72,48 @@ class AuthService with ChangeNotifier {
     }
   }
 
-  Future<void> sendpic() async {
+  Future<String> sendpic(File image) async {
     AuthResult result;
     FirebaseUser user;
+    var uuid = Uuid();
+    Random random;
 
     final ref = FirebaseStorage.instance
         .ref()
         .child('_image')
-        .child('/storage/emulated/0/Android/data/com.example.agriventurex_app/files/Pictures/f334c8a6-5e48-4b6d-9a7c-2dcb5cf4c5a72690101762142090700.jpg');
+        .child('1234' + 'jpg');
+    
+    await ref.putFile(image).onComplete;
 
+    final url = await ref.getDownloadURL();
+    answer = url;
 
-
+    notifyListeners();
+    return answer;
 
 
   }
 
+
+  Future<String> sendimage(String text) async {
+
+
+    var url = "https://try-234.herokuapp.com/";
+    try {
+      final response = await http.post(url,
+          headers: <String, String>{
+            'Content-Type': 'application/json; charset=utf-8',
+          },
+          body: json.encode({"image_url": text}));
+      url = json.decode(response.body)  ["ans"] ;
+      print(url);
+      notifyListeners();
+      return url;
+
+
+    } catch (error) {
+      return null;
+    }
+  }
 
 }
